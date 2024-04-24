@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AdminModule } from './modeules/admin/admin.module';
+import { UserModule } from './modeules/user/user.module';
+import { WildcardsComponent } from './wildcards/wildcards.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WildcardsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
